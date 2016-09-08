@@ -75,24 +75,25 @@ namespace _1._03
 
             int totalSum = 72;
             int totalNum = 3;
-            int num1 = 23;
-            int num2= 24;
-            int num3= 25;
-            int smallestNum;
+            int smallestNum = 0;
+            int num1;
+            int num2;
+            int num3;
+            
 
             num1 = totalSum / totalNum;
-            num2 = num1--;
-            num3 = num1++;
+            num2 = (num1 - 1);
+            num3 = (num1 + 1);
 
-            if ((num1 > num2) && (num1 > 3))
+            if ((num1 < num2) && (num1 < 3))
             {
                 smallestNum = num1;
             }
-            else if ((num2 > num1) && (num2 > num3)) 
+            else if ((num2 < num1) && (num2 < num3))
             {
                 smallestNum = num2;
             }
-            else if ((num3 > num1)&&(num3 > num2))
+            else if ((num3 < num1) && (num3 < num2))
             {
                 smallestNum = num3;
             }
